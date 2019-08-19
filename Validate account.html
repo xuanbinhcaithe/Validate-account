@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" value="" id="txt"><br>
+<input type="button" value="click" onclick="check()">
+<br>
+<p id="hienThi"></p>
+<script>
+    patt=/^[_a-z0-9]{6}$/;
+    function check() {
+        let str=document.getElementById("txt").value;
+        if (patt.test(str)) {
+            document.getElementById("hienThi").innerHTML="chính xác";
+        } else {
+            document.getElementById("hienThi").innerHTML="không chính xác";
+        }
+    }
+
+
+</script>
+</body>
+</html>
